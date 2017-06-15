@@ -1,24 +1,14 @@
 <template>
-  <div>
-  </div>
+  <list></list>
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
+import list from '@/components/list'
 
 export default {
   name: 'main',
-  data () {
-    return {
-    }
-  },
-  created: function () {
-  },
-  computed: {
-    ...mapGetters([
-    ])
-  },
-  methods: {
+  components: {
+    list
   }
 }
 </script>
