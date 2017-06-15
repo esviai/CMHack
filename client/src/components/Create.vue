@@ -2,7 +2,6 @@
   <div class="container">
     <br>
     <br>
-    <br>
     <div class="field">
       <p class="control">
       <input v-model="article.title"class="input" type="text" placeholder="Title">

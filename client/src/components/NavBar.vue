@@ -14,7 +14,7 @@
       </span>
 
       <div class="nav-right nav-menu">
-        <router-link :to="{path: 'create'}" v-if="token" @click="create" class="button is-primary is-outlined nav-item">
+        <router-link :to="{path: 'create'}" v-if="token" class="button is-primary is-outlined nav-item">
           Create
         </router-link>
         <a v-if="token" @click="signout" class="button is-danger is-outlined nav-item">
@@ -86,8 +86,6 @@ export default {
     signout: function () {
       this.$store.dispatch('signout')
       window.location.href = 'http://localhost:8080'
-    },
-    create: function () {
     }
   }
 }
