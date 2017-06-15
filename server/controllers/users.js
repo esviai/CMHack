@@ -32,7 +32,7 @@ var signin = ((req, res) => {
           if(err) res.send(err)
           else {
             if(result) {
-              let token = jwt.sign({id: user.id, username: user.username}, process.env.SECRET_KEY)
+              let token = jwt.sign({_id: user.id, username: user.username}, process.env.SECRET_KEY)
               res.send({token:token})
             }
             else {

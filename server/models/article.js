@@ -4,14 +4,13 @@ const Schema = mongoose.Schema
 var articleSchema = new Schema ({
   title: {
     type: String,
-    minlength:
     required: true
   },
   content: {
     type: String,
     required: true
   },
-  category: {
+  categories: {
     type: [String]
   },
   author: {
